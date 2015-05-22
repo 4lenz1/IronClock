@@ -1,18 +1,19 @@
 import QtQuick 2.3
-import QtQuick.Controls 1.2
-
+import QtQuick.Controls 1.3
+import QtQuick.Layouts 1.1
 ApplicationWindow {
     visible: true
     width: 640
     height: 480
     Rectangle{
         property alias txtTime: txtTime
+        transformOrigin: Item.Center
         id:background
 
         gradient: Gradient {
             GradientStop {
                 position: 0
-                color: "#011f04"
+                color: "#00c41a"
             }
 
             GradientStop {
@@ -103,6 +104,51 @@ ApplicationWindow {
             color: "#4bd1e1"
             opacity: .7
             radius: width * .5
+
+            MouseArea{
+                anchors.fill:  parent
+                onClicked: {
+                    mouseOnCore.start()
+                }
+            }
+
+            SequentialAnimation{
+                id : mouseOnCore
+                ParallelAnimation{
+                    NumberAnimation {
+                        target: core
+                        property: "scale"
+                        duration: 500
+                        to: 7
+                        easing.type: Easing.OutCubic
+                    } // End NumberAnimation
+
+                    NumberAnimation {
+                        target: core
+                        property: "opacity"
+                        duration: 500
+                        to : .3
+                        easing.type: Easing.InOutQuad
+                    }
+                }// end ParallelAnimation
+                ParallelAnimation{
+                    NumberAnimation {
+                        target: core
+                        property: "scale"
+                        duration: 8000
+                        to : 1
+                        easing.type: Easing.OutElastic
+                    }
+                    NumberAnimation {
+                        target: core
+                        property: "opacity"
+                        duration: 9000
+                        to : .7     //default
+                        easing.type: Easing.OutElastic
+                    }
+                } // end ParallelAnimation
+            } // end mouseOnCore
+
             //core scale Animation
             ParallelAnimation{
                 id:aniCore
@@ -174,11 +220,10 @@ ApplicationWindow {
                 } // end NumberAnimation
             } // end ParallelAnimation
         }//end txtTime
-
-
-
         //Rectangle here
 
+        Item{
+        }
         //        Row {
         //            x: 222
         //            LayoutMirroring.enabled: true

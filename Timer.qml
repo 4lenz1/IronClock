@@ -5,9 +5,10 @@ Rectangle {
 
 
     Item{
+        property variant numSec : numSec;
+
         property int  hour: 24
         property int  min: 60
-
         property int  ms: 999
         Timer{
                 id: timerSec

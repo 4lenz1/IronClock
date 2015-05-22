@@ -3,6 +3,6 @@
         <file>main.qml</file>
         <file>font/IDroid.otf</file>
         <file>font/NEOTERIC.ttf</file>
-        <file>Timer.qml</file>
+        <file>timer.qml</file>
     </qresource>
 </RCC>
