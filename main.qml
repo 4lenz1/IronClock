@@ -1,6 +1,8 @@
 import QtQuick 2.3
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
+import QtGraphicalEffects 1.0
+
 ApplicationWindow {
     visible: true
     width: 640
@@ -42,6 +44,7 @@ ApplicationWindow {
         Component.onCompleted: {
             aniCoreBorder.start()
             aniCore.start()
+            anieffectouter.start()
         } //end  Component.onCompleted
 
         Rectangle{
@@ -171,6 +174,47 @@ ApplicationWindow {
                 }// end SequentialAnimation
             }//end ParallelAnimation
         }// end core
+
+        RectangularGlow{
+            id : effectouter
+            anchors.fill: core
+            glowRadius: 20
+            color: "white"
+            cornerRadius: core.radius + glowRadius
+
+
+            SequentialAnimation{
+                id:anieffectouter
+                loops: Animation.Infinite
+                NumberAnimation {
+                    running: true
+                    target: effectouter
+                    property: "spread"
+                    duration: 15000
+                    easing.type: Easing.InOutQuad
+                    from  :.2
+                    to : .8
+                }
+                NumberAnimation {
+                    running: true
+                    target: effectouter
+                    property: "spread"
+                    duration: 15000
+                    easing.type: Easing.InOutQuad
+                    from : .8
+                    to : .2
+                }
+            } // end    anieffectouter
+        }
+                RectangularGlow{
+                    id : effectinner
+                    anchors.fill: core
+                    glowRadius: 10
+                    spread: .025
+                    color: "lightblue"
+                    cornerRadius: core.radius + glowRadius
+                }
+
         FontLoader{
             id: fontDroid
             source: "font/IDroid.otf"
