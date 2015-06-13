@@ -1,0 +1,27 @@
+C:\Qzone\IronClock\android-build\bin\classes.dex : \
+C:\Qzone\IronClock\android-build\bin\classes\org\kde\necessitas\ministro\IMinistro$Stub$Proxy.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\kde\necessitas\ministro\IMinistro$Stub.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\kde\necessitas\ministro\IMinistro.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\kde\necessitas\ministro\IMinistroCallback$Stub$Proxy.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\kde\necessitas\ministro\IMinistroCallback$Stub.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\kde\necessitas\ministro\IMinistroCallback.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\example\IronClock\BuildConfig.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\example\IronClock\R$array.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\example\IronClock\R$attr.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\example\IronClock\R$layout.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\example\IronClock\R$string.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\example\IronClock\R.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$1.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$2.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$3$1$1.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$3$1.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$3.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$4.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$5.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity$6.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtActivity.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtApplication$InvokeResult.class \
+C:\Qzone\IronClock\android-build\bin\classes\org\qtproject\qt5\android\bindings\QtApplication.class \
+C:\Qzone\IronClock\android-build\bin\dexedLibs\QtAndroid-bundled-3a83e60c561b91d5c333890ebb0ce955.jar \
+C:\Qzone\IronClock\android-build\bin\dexedLibs\QtAndroidBearer-bundled-f030067c51754ef45c467ad53e312e76.jar \
+C:\Qzone\IronClock\android-build\bin\dexedLibs\QtAndroidAccessibility-bundled-20cc75198d0202702c67e143bada96c6.jar \

@@ -1,14 +1,196 @@
-import QtQuick 2.3
+import QtQuick 2.4
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 import QtGraphicalEffects 1.0
+import QtQuick.Window 2.2
+
 
 ApplicationWindow {
     visible: true
     width: 640
     height: 480
+//Time_counter{
+//    timerSec{
+
+//    }
+//}
+    ParallelAnimation{
+        id: aniCircleRotation
+        running: false
+        NumberAnimation {
+            target: circle
+            //running: true
+            property: "rotation"
+            duration: 5000
+            from : 5
+            to : 365
+            loops: Animation.Infinite
+           // easing.type: Easing.InOutQuad
+        }
+        NumberAnimation {
+            target: circle1
+          //  running: true
+            property: "rotation"
+            duration: 5000
+            from : 60 + 5
+            to : 360 + 60 + 5
+            loops: Animation.Infinite
+           // easing.type: Easing.InOutQuad
+        }
+        NumberAnimation {
+            target: circle2
+           // running: true
+            property: "rotation"
+            duration: 5000
+            from : 120 + 5
+            to : 360 + 120 + 5
+            loops: Animation.Infinite
+          //  easing.type: Easing.InOutQuad
+        }
+        NumberAnimation {
+            target: circle3
+            running: true
+            property: "rotation"
+            duration: 5000
+            from : 180 + 5
+            to : 360 + 180 + 5
+            loops: Animation.Infinite
+          //  easing.type: Easing.InOutQuad
+        }
+        NumberAnimation {
+            target: circle4
+          //  running: true
+            property: "rotation"
+            duration: 5000
+            from : 240 + 5
+            to : 360 + 240 + 5
+            loops: Animation.Infinite
+         //   easing.type: Easing.InOutQuad
+        }
+        NumberAnimation {
+            target: circle5
+            running: true
+            property: "rotation"
+            duration: 5000
+            from : 300 + 5
+            to : 360 + 300 + 5
+            loops: Animation.Infinite
+         //   easing.type: Easing.InOutQuad
+        }
+    }
+
+    Circle {
+        id: circle;
+        anchors.fill: parent;
+        color: 'orange';
+        border: 20;
+        angle: 0;
+
+        Behavior on angle {
+            NumberAnimation {
+                duration: 2000;
+                easing.type: Easing.OutCubic;
+            }
+        }
+    }
+    Circle {
+        id: circle1;
+        anchors.fill: parent;
+        color: 'orange';
+        border: 20;
+        angle: 0;
+
+        Behavior on angle {
+            NumberAnimation {
+                duration: 2000;
+                easing.type: Easing.OutCubic;
+            }
+        }
+
+    }
+    Circle {
+        id: circle2;
+        anchors.fill: parent;
+        color: 'orange';
+        border: 20;
+        angle: 0;
+
+        Behavior on angle {
+            NumberAnimation {
+                duration: 2000;
+                easing.type: Easing.OutCubic;
+            }
+        }
+    }
+    Circle {
+        id: circle3;
+        anchors.fill: parent;
+        color: 'orange';
+        border: 20;
+       angle: 0;
+
+        Behavior on angle {
+            NumberAnimation {
+                duration: 2000;
+                easing.type: Easing.OutCubic;
+            }
+        }
+    }
+    Circle {
+        id: circle4;
+        anchors.fill: parent;
+        color: 'orange';
+        border: 20;
+       angle: 0;
+
+        Behavior on angle {
+            NumberAnimation {
+                duration: 2000;
+                easing.type: Easing.OutCubic;
+            }
+        }
+    }
+    Circle {
+        id: circle5;
+        anchors.fill: parent;
+        color: 'orange';
+        border: 20;
+        angle: 0;
+
+        Behavior on angle {
+            NumberAnimation {
+                duration: 2000;
+                easing.type: Easing.OutCubic;
+            }
+        }
+    }
+
+    Component.onCompleted: {
+        circle.color =circle1.color =
+                circle2.color =
+                circle3.color =
+                circle4.color =
+                circle5.color = 'orange'
+
+        circle.angle =
+                circle1.angle =
+                circle2.angle =
+                circle3.angle =
+                circle4.angle =
+                circle5.angle = 50
+
+        circle.angleOffset = 0 +5
+        circle1.angleOffset = 60 +5
+        circle2.angleOffset = 120 +5
+        circle3.angleOffset = 180 +5
+        circle4.angleOffset = 240 +5
+        circle5.angleOffset = 300 +5
+
+        //aniCircleRotation.start()
+    }
     Rectangle{
         property alias txtTime: txtTime
+
         transformOrigin: Item.Center
         id:background
 
@@ -245,7 +427,7 @@ ApplicationWindow {
             property int numSec : 59
             anchors.centerIn:  parent
             id:txtTime
-            text: numSec + "." + numMs
+            text:  numSec + "." + numMs
             font.family: "IDroid"
             color : "black"
             // font.family: "NEOTERIC"
@@ -265,6 +447,8 @@ ApplicationWindow {
             } // end ParallelAnimation
         }//end txtTime
         //Rectangle here
+
+
 
         Item{
         }
@@ -298,7 +482,6 @@ ApplicationWindow {
         //            } // end row
 
     } // end background
-
 }
 
 
