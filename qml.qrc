@@ -7,7 +7,8 @@
         <file>Time_counter.qml</file>
         <file>Circle.qml</file>
         <file>Polygon.qml</file>
-        <file>Form.qml</file>
         <file>CircleAnimate.qml</file>
+        <file>Core.qml</file>
+        <file>CoreAnimate.qml</file>
     </qresource>
 </RCC>
