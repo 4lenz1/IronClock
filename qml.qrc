@@ -3,9 +3,11 @@
         <file>main.qml</file>
         <file>font/IDroid.otf</file>
         <file>font/NEOTERIC.ttf</file>
-        <file>animate.qml</file>
+        <file>DrawCircle.qml</file>
         <file>Time_counter.qml</file>
         <file>Circle.qml</file>
         <file>Polygon.qml</file>
+        <file>Form.qml</file>
+        <file>CircleAnimate.qml</file>
     </qresource>
 </RCC>
